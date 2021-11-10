@@ -122,13 +122,19 @@ window.addEventListener("scroll", function(e) {
 
 
 
-let listBurger = document.querySelector(`.header__list-burger`);
-
-let menu = burger.nextElementSibling;
-
-
-
-
 burger.addEventListener(`click`, showBurger);
+
+function showBurger(e) {
+    let listBurger = document.querySelector(`.header__list-burger`);
+    let menu = burger.nextElementSibling;
+
+    if (menu.classList.contains(`header__list`)) {
+        menu.classList.remove(`header__list`);
+        menu.classList.add(`header__list-burger`);
+    } else {
+        menu.classList.remove(`header__list-burger`);
+        menu.classList.add(`header__list`);
+    }
+}
 
     
