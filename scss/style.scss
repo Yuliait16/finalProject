@@ -137,6 +137,14 @@ $color_black-light: #222321;
 .rotate {
     transform: rotate(180deg);
 }
+
+.x-mark {
+    transform:  translate(0, 12px) rotate(45deg);
+}
+.x-mark2 {
+    transform: translate(0, 6px) rotate(-45deg);
+}
+
 .button__default {
     border: 2px solid $color_black;
     color: $color_black;
@@ -177,9 +185,6 @@ $color_black-light: #222321;
     padding: 22px 0px;
     @media (max-width: 480px) {
         padding: 17px 0px 25px 0;
-    }
-
-    &__container {
     }
 
     &__body {
@@ -262,6 +267,10 @@ $color_black-light: #222321;
         a {
             color: inherit;
         }
+    }
+
+    &__item:hover{
+        text-decoration: underline;
     }
 }
 .burger {
@@ -425,9 +434,6 @@ $color_black-light: #222321;
         padding: 30px 0;
     }
 
-    &__container {
-    }
-
     &__top {
         margin-bottom: 105px;
         @media (max-width: 1200px) {
@@ -518,8 +524,6 @@ $color_black-light: #222321;
     text-align: center;
     @include head-block(#000000);
 
-    &__container {
-    }
 
     &__top {
         margin-bottom: 110px;
@@ -671,9 +675,6 @@ $color_black-light: #222321;
 
     @media (max-width: 480px) {
         padding: 30px 0px;
-    }
-
-    &__container {
     }
 
     &__top {
@@ -947,8 +948,6 @@ $color_black-light: #222321;
         }
     }
 
-    &__pagination {
-    }
 }
 .member {
     &__photo {
@@ -1057,14 +1056,6 @@ $color_black-light: #222321;
     @extend %block;
     @include head-block(#000000);
     background-color: $color_green-light;
-
-    &__container {
-    }
-    &__content {
-        /* @media (max-width: 480px) {
-            display: none;
-        } */
-    }
 
     &__top {
         @extend %head-block-margin;
@@ -1226,8 +1217,7 @@ $color_black-light: #222321;
         justify-content: center;
     }
 }
-.button-more {
-}
+
 
 /* ---CONTACT------------------------------ */
 
@@ -1292,8 +1282,6 @@ $color_black-light: #222321;
         }
     }
 
-    &__form {
-    }
 
     &__info {
         font-size: 22px;
@@ -1477,6 +1465,10 @@ $color_black-light: #222321;
         }
     }
 
+    &__item:hover{
+        text-decoration: underline;
+    }
+
     &__info {
         text-align: right;
         @media (max-width: 480px) {
@@ -1498,9 +1490,6 @@ $color_black-light: #222321;
             line-height: 16px;
             margin-bottom: 8px;
         }
-    }
-
-    &__links {
     }
 
     &__link {
