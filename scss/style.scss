@@ -137,14 +137,12 @@ $color_black-light: #222321;
 .rotate {
     transform: rotate(180deg);
 }
-
 .x-mark {
     transform:  translate(0, 12px) rotate(45deg);
 }
 .x-mark2 {
     transform: translate(0, 6px) rotate(-45deg);
 }
-
 .button__default {
     border: 2px solid $color_black;
     color: $color_black;
@@ -268,7 +266,6 @@ $color_black-light: #222321;
             color: inherit;
         }
     }
-
     &__item:hover{
         text-decoration: underline;
     }
@@ -523,7 +520,6 @@ $color_black-light: #222321;
     background-color: $color_green-light;
     text-align: center;
     @include head-block(#000000);
-
 
     &__top {
         margin-bottom: 110px;
@@ -1218,7 +1214,6 @@ $color_black-light: #222321;
     }
 }
 
-
 /* ---CONTACT------------------------------ */
 
 .contact {
@@ -1281,7 +1276,6 @@ $color_black-light: #222321;
             }
         }
     }
-
 
     &__info {
         font-size: 22px;
